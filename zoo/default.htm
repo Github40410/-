@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Теплые объятия</title>
+
+<style type="text/css">
+
+	
+.style2 {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	color: #FF0000;
+	font-family: Arial;
+	display:inline-block;
+}
+
+.style8 {
+	text-align: center;
+}
+.style9 {
+	text-align: left;
+}
+.style10 {
+	color: #000080;
+}
+.style11 {
+	text-align: left;
+	color: #000080;
+}
+</style>
+</head>
+
+<body style="background-image: url('img/fon.jpg')" >
+
+<div class="style8">
+<div style="height:200px" class="style1">
+    <img src="img/hapka.jpg" alt="Счастливае животные" style="height:200px"/>
+	<h1 class="style2" style="height: 197px; width: 851px;">Теплые Объятия</h1>
+</div>
+<div style="display:inline; margin:10px" class="style9">
+<div style="display:inline">
+	<table align="left">
+		<tr>
+			<td class="style9">
+			<input name="Button1" type="button" value="На главную" style="width: 218px" /></td>
+		</tr>
+		<tr>
+			<td class="style9"><a href="inf.htm">
+			<input name="Button2" type="button" value="Узнать подробнее" /></a></td>
+		</tr>
+		<tr>
+			<td class="style9"><a href="pitom.htm"><input name="Button1" type="button" value="Животные в приюте" /></a></td>
+		</tr>
+		<tr>
+			<td class="style9"><a href="help.htm"><input name="Button1" type="button" value="Как можно помочь" /></a> </td>
+		</tr>
+		<tr>
+			<td class="style9"><input name="Button1" type="button" value="Приветствие" onclick="Hallo()"/></td>
+		</tr>
+		<tr>
+			<td class="style9"><input name="Button1" type="button" value="Дата и время" onclick="Time()" /></td>
+		</tr>
+
+		</table>
+	</div>
+	<div style="display:inline">
+	<p class="style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Добро пожаловать в приют "Тёплые объятия"! </p>
+	<p class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Тёплые объятия" — это уютное пристанище для бездомных и покинутых животных, место, где они могут найти безопасность и надежные руки. Наш приют стремится дать им второй шанс и помочь в поиске дома, где их будут ценить.</p>
+	<p class="style10">Мы делаем все возможное, чтобы предоставить нашим подопечным все необходимое: пропитание, лечение, прогулки и, конечно же, море ласки. В "Тёплых объятиях" каждое животное находится под защитой заботливого персонала, состоящего из преданных волонтеров, которые трудятся с любовью.</p>
+	<p class="style8"><img alt="собака" src="img/dog.jpg" width="550" height="370" /></p>
+	<p class="style10">Мы также приглашаем всех, кто заинтересован, стать частью этого большого сердца. Вы можете стать волонтером, помочь материально или даже принять под свою опеку одно из множества четвероногих друзей, жаждущих найти свой дом.</p>
+	<p class="style10">Присоединяйтесь к нам в "Тёплых объятиях" и подарите любовь, которая станет фундаментом для новой жизни. Здесь никто не останется бездомным, потому что каждое животное заслуживает любящего и заботливого дома.</p>
+	</div>
+</div>
+<form method="post">
+	<div class="style8">
+		<a href="inf.htm">
+		<input name="Button1" type="button" value="Узнать о приюте подробнее" /></a></div>
+</form>
+<script language="javascript" type="text/javascript">
+ function Hallo(){
+  var firstName = prompt("Введите ваше имя:");
+  var lastName = prompt("Введите вашу фамилию:");
+  var middleName = prompt("Введите ваше отчество:");
+
+  var greeting = "Привет, " + firstName + " " + middleName + " " + lastName + "! Добро пожаловать на наш сайт!";
+
+  alert(greeting);
+  }
+ function Time(){
+ var currentDate = new Date();
+ var dateString = currentDate.toLocaleDateString();
+ var timeString = currentDate.toLocaleTimeString();
+ 
+ var time = "Дата: " + dateString + ", время: " + timeString;
+ alert(time);
+} 
+</script>
+</body>
+
+</html>
